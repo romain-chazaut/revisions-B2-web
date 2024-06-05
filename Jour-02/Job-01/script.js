@@ -1,5 +1,4 @@
-const userArray =
-[
+const userArray = [
 { firstname: 'Alice', lastName: 'Dupont', isActive: true},
 { firstname: 'Bob', lastName: 'Martin', isActive: false},
 { firstname: 'Charlie', lastName: 'Durand', isActive: true},
@@ -25,9 +24,10 @@ function printUser(){
         testDiv.appendChild(user)
     }
 }
+
 function changeIsActive(i) {
      userArray[i].isActive = !userArray[i].isActive
      printUser()
 }
 
-document.addEventListener('DOMContentLoaded', printUser); // Ensure the function is called after DOM content is loaded
+document.addEventListener('DOMContentLoaded', printUser);
